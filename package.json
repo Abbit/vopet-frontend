@@ -1,0 +1,36 @@
+{
+  "name": "vopet_web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "gen": "graphql-codegen --config codegen.yml"
+  },
+  "dependencies": {
+    "graphql": "^15.1.0",
+    "graphql-request": "^2.0.0",
+    "lodash": "^4.17.15",
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-hook-form": "^6.0.4",
+    "styled-components": "^5.1.1",
+    "swr": "^0.2.3"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.15.4",
+    "@graphql-codegen/introspection": "1.15.4",
+    "@graphql-codegen/typescript": "1.15.4",
+    "@graphql-codegen/typescript-graphql-request": "^1.15.4",
+    "@graphql-codegen/typescript-operations": "^1.15.4",
+    "@svgr/webpack": "^5.4.0",
+    "@types/lodash": "^4.14.157",
+    "@types/node": "^14.0.14",
+    "@types/react": "^16.9.41",
+    "@types/styled-components": "^5.1.1",
+    "babel-plugin-styled-components": "^1.10.7",
+    "typescript": "^3.9.5"
+  }
+}

@@ -1,0 +1,48 @@
+query getSubjects {
+  subjects {
+    title
+  }
+}
+
+query getSubjectQuestions($title: String!) {
+  subject(title: $title) {
+    title
+    questions {
+      id
+      title
+      body
+      answersCount
+    }
+  }
+}
+
+query getQuestion($id: ID!) {
+  question(id: $id) {
+    id
+    title
+    body
+    answers {
+      body
+      user {
+        username
+      }
+    }
+    subject {
+      title
+    }
+  }
+}
+
+query getUser {
+  user {
+    username
+  }
+}
+
+query getFullUser {
+  user {
+    email
+    username
+    answersCount
+  }
+}
